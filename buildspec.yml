@@ -6,13 +6,13 @@ phases:
             nodejs: latest
         commands:
             - echo "In Installing Phase"
-    pre-build:
+    pre_build:
         commands:
             - echo "In Pre Build Phase"
     build:
         commands:
             - echo "In Build Phase"
             - grep -Fq "Congratulations" index.html
-    post-build:
+    post_build:
         commands:
                 - echo "In Post Build Phase"
